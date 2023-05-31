@@ -33,6 +33,7 @@
                     <td>@item.User.UserName</td>
                     <td>@item.productInOrders.Count()</td>
                     <td><a class="btn btn-outline-info" asp-action="Details" asp-route-orderId="@item.Id">View Order</a></td>
+                    <td><a class="btn btn-outline-info" asp-action="CreateInvoice" asp-route-Id="@item.Id">Create Invoice</a></td>
                 </tr>
 
             }
